@@ -1,0 +1,470 @@
+@font-face {
+    font-family: cube;
+    src: url(./assest/matter-light.woff2);
+}
+@font-face {
+    font-family: robotoflex;
+    src: url(./assest/roboto-flex-latin.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.page1{
+    height: 180vh;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+    background-color: #fff;
+    padding: 0vw 2vw;
+
+}
+nav img{
+    
+height: 7vw;
+width: 7vw;
+}
+nav p{
+    padding: 3vw 0vw;
+    font-family: sans-serif;
+    font-size: 1.2vw;
+}
+.digital{
+    padding: 4vw 11vw;
+    font-size: 7vw;
+    height: 20vh;
+    background-color: #fff;
+    font-family: cube;    
+
+}
+.pg1content{
+    height: 60vh;
+    background-color: #fff;
+}
+.video video{
+    height: 7vw;
+    width: 10vw;
+    margin: 1vw 2vw;
+    border-radius: 55vw;
+    animation-name: zoom;
+    animation-timing-function: ease;
+     animation-duration: 4s;
+     
+      
+    
+}
+
+.video{
+    display: flex;
+    text-align: center;
+    background-color: #fff;
+        font-family: cube;
+            margin: 2vw 0vw;
+            font-size: 7vw;
+padding-left: 9.9vw;
+            height: 9vh;
+            margin-top: 0;
+;
+
+   
+}
+.video p{
+        margin: -1vw 1.1vw;
+        padding-right: 1vw;
+
+
+  font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  font-style: italic;
+
+
+}
+
+.agency{
+    background-color: #ffffff;
+    font-size: 7vw;
+    padding: 0vw 13vw;
+    font-family: cube;
+}
+.pg1video{
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    object-fit: cover;
+}
+.pg1video video {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.right{
+    display: flex;
+
+}
+.right i{
+    padding: 3.2vw 2vw;
+}
+
+::selection{
+    background: grey;
+    color: white;
+}
+@keyframes pg1vid {
+    from{
+        top: 100%;
+
+    }
+    to{
+            top: 74%;
+
+    }
+}
+@keyframes navbar {
+    from{
+        top: -100%;
+
+    }
+    to{
+            top: 74%;
+
+    }
+}
+
+
+.page2{
+    height: 110vh;
+    width: 100vw;
+    background-color: #282424;
+}
+.page2{
+    display: flex;
+    
+}
+.page2 .left{
+    height: 100%;
+    width: 40%;
+    background-color: #ffffff;
+
+}
+.page2 .right{
+    height: 100%;
+    width: 60%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+
+}
+.page2 .left video{
+    animation-name: zoom;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+    
+    height: 30vw;
+    margin: 11vw;
+    
+}
+.page2 .right .up{
+    height: 50%;
+    width: 100%;
+    background-color: #ffffff;
+}
+.page2 .right .second{
+    height: 50%;
+    width: 100%;
+    background-color: #ffffff;
+    
+}
+.page2 .right .up {
+    padding: 15vw 7vw;
+    font-size: 2.5vw;
+    font-family: cube;
+    }
+
+.second h4 {
+  border: 2px solid #9e8d87;
+  padding: 13px 10px;
+  border-radius: 150px;
+  font-size: 35px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.763);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+   display: flex;
+    justify-content: center;
+    align-items: center ;
+    height: 13vw;
+    width: 27vw;
+    margin: 0vw 9vw;
+   
+}
+.second h4::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  bottom: -100%;
+  left: 0;
+  border-radius: 50%;
+
+  transition: all 0.4s ease;
+}
+.menutop{
+  position:absolute;
+  right: 5vw;
+}
+.second h4:hover::after {
+  bottom: 0;
+  color: #9e8d87;
+  border-radius: 0;
+}
+.second h4 a {
+  text-decoration: none;
+  color: #000000;
+  font-family:cube;
+  font-weight: 500;
+}
+.second h4:hover a {
+  z-index: 10;
+  color: #f2f2f2;
+  border-radius: 0;
+  position: relative;
+}
+.second h4:hover{
+  transition: all 0.5s ease-in-out;
+    scale: 1.1;
+    width: 28vw;
+    height: 13vw;
+}
+
+.page3{
+    height: 550vh;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.featuredproject{
+    height: 550vh;
+    width: 100%;
+    background-color: #161616;
+    border-top-left-radius: 5vw;
+        border-top-right-radius: 5vw;
+
+}
+.page3 .featuredproject .text{
+    padding: 10vw 12vw;
+    color: white;
+    font-size: 10vw;
+    
+    font-family: cube;
+
+}
+.page3 .featuredproject .text p{
+    color: rgb(255, 255, 255);
+    z-index: 9;
+}
+.page3 .featuredproject .text .fpviid{
+    margin-top:0px ;
+   font-family:  cube;
+  font-weight: 100;
+  font-style: italic;
+  display: flex;
+  margin: -2vw -1vw;
+}
+.page3 .featuredproject .text .fpviid video{
+    padding: 2vw 1vw;
+    height: 14vw;
+    border-radius: 300px;
+}
+.cards{
+    display: flex;
+    color: white;
+}
+
+.cards .left{
+    height: 500vh;
+    width: 50%;
+    /* background-color: #161616; */
+    
+}
+.cards .right{
+    padding-top: 22vw;
+    padding-left: 5vw;
+    
+    height: 500vh;
+    width: 50%;
+    /* background-color: #161616; */
+    
+}
+.cards .line{
+    display: flex;
+}
+.left .t1 video{
+    height: 75vh;
+    border-radius: 50px;
+    animation-name: opacity;
+    animation-timing-function: linear;
+     animation-timeline: view();
+          animation-range: entry 0;
+
+    
+}
+.left .t1{
+    padding: 2vw 13vw;
+}
+div.title{
+    margin: 2vw 0vw;
+    font-family: robotoflex;
+    font-weight:600 ;
+    font-size: 1.4vw;
+}
+.cards .left{
+    display: flex;
+    flex-direction: column;
+
+}
+.right .t1 video{
+    height: 75vh;
+    border-radius: 50px;
+    animation-name: oapcity;
+    animation-timing-function: linear;
+     animation-timeline: view();
+          animation-range: entry 0;
+
+    
+}
+
+div.title{
+    margin: 2vw 0vw;
+    font-family: robotoflex;
+    font-weight:100 ;
+    font-size: 1.4vw;
+}
+div.title p{
+
+    font-family: robotoflex;
+    font-weight: 900;
+    
+}
+.cards .right{
+    display: flex;
+    flex-direction: column;
+}
+.t2{
+    padding: 0vw 14vw;
+    animation-name: opacity;
+    animation-timing-function: linear;
+     animation-timeline: view();
+          animation-range: entry 0;
+
+    
+    
+}
+.cards .right .rt2{
+    border-radius: 40px;
+    padding: 0vw 0vw;
+    animation-name: opacity;
+    animation-timing-function: linear;
+     animation-timeline: view();
+     animation-range: entry 0;
+    
+    
+}
+.cards .right .rt2 video{
+    border-radius: 40px;
+    
+    
+    
+}
+.t2 video{
+    border-radius: 40px;
+    
+    width: 55vh;
+}
+@keyframes opacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        
+    }
+}
+@keyframes zoom{
+     from{
+        scale: 0;
+    }
+    to{
+        scale: 1.2;
+        
+    }
+}
+.fpviid video{
+    animation-name: zoom;
+    animation-timing-function: linear;
+    animation-timeline:view();
+}
+.page4{
+    height: 175vh;
+    width: 100%;
+    background-color: #161616;
+}
+.philosopy{
+    height: 175vh;
+    width: 100%;
+    border-radius: 30px;
+    background-color: white;
+    border-top-left-radius: 5vw;
+        border-top-right-radius: 5vw;
+}
+.philosopy .toptext{
+    font-size: 10vw;
+    padding: 12vw 14vw;
+    font-family: cube;
+    font-weight: 400;
+}
+.philosopy .toptext p{
+    margin:-3vw -1vw ;
+    font-style: italic;
+    font-weight:lighter;
+}
+.pg3box{
+    display: flex;
+}
+.pg3box .pleft{
+    height: 100vh;
+    width: 50%;
+    
+}
+.pg3box .pright{
+    height: 100vh;
+    width: 50%;
+   
+    padding: 9vw 2vw;
+    font-family: cube;
+    font-weight: 500;
+    font-size: 1.9vw;
+}
+.pg3box .pleft video{
+    height: 45vw;
+    padding: 6vw 12vw;
+}
